@@ -1,18 +1,19 @@
 import BoxWithClassName from "../components/BoxWithClassName/BoxWithClassName.js";
 import BoxWithStyledComponents from "../components/BoxWithStyledComponents";
 import styled from "styled-components";
+import StyledBox from "../components/BoxWithStyledComponents";
 
-const HorizontalContainer = styled.div`
+const HorizontaleAusrichtung = styled.div`
   display: flex;
 `;
 
 export default function HomePage() {
   return (
-    <HorizontalContainer>
+    <HorizontaleAusrichtung>
       <BoxWithClassName />
       <BoxWithClassName isBlack />
-      <BoxWithStyledComponents />
-      <BoxWithStyledComponents $isBlack />
-    </HorizontalContainer>
+      <StyledBox />
+      <StyledBox $isBlack />
+    </HorizontaleAusrichtung>
   );
 }

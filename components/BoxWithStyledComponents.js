@@ -11,8 +11,4 @@ const StyledBox = styled.div`
   }
 `;
 
-const BoxWithStyledComponents = ({ $isBlack }) => {
-  return <StyledBox $isBlack={$isBlack} />;
-};
-
-export default BoxWithStyledComponents;
+export default StyledBox;
